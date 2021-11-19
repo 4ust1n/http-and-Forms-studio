@@ -18,7 +18,7 @@
         // TODO: register the handler
 		const q = document.getElementById('q');
 		const engine = document.getElementsByName('engine');
-		const form = document.getElementById('searchForm');
+		const form = document.getElementById( 'searchForm');
 		form.addEventListener('submit', () => {
 			let search = setSearchEngine()
 			form.setAttribute('action', search)
@@ -26,25 +26,22 @@
     });
 	</script>
 </head>
-
 <body>
-
 	<form id="searchForm" action="">
     <!-- TODO: add form elements -->
 		<input type="text" name="q" id="q"/>
 		<label>
-			<input type="radio" name="engine" value="google" id="google"/> Google
+			<input type="radio" name="engine" value="google"/> Google
 		</label>
 		<label>
-			<input type="radio" name="engine" value="duckduckgo" id="duckduckgo"/> DuckDuckGo
+			<input type="radio" name="engine" value="duckduckgo"/> DuckDuckGo
 		</label>
 		<label>
-			<input type="radio" name="engine" value="bing" id="bing"/> Bing
+			<input type="radio" name="engine" value="bing"/> Bing
 		</label>
 		<label>
-			<input type="radio" name="engine" value="ask" id="ask"/> Ask
+			<input type="radio" name="engine" value="ask"/> Ask
 		</label>
-		<input type="submit" value="Go!" id="go"/>
+		<input type="submit" value="Go!"/>
 	</form>
-
 </body>
